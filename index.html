@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomer Test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Pixaby API</h1>
-    <a href="https://pixabay.com/api/?key=35829162-4638e1e58dac695ba18841589&q=yellow+flowers&image_type=photo" target="_blank">Images</a>
+    <h1>Pixabay API</h1>
+    <input type="text" id="search" placeholder="Enter a Search term">
+    <button onclick="searchPixabay()">Search</button>
+    <div class="container" id="results"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <div id="modalDescription"></div>
+            <img id="modalImage">
+        </div>
+    </div>
+    <script src="/TestTask/script.js"></script>
 </body>
 </html>

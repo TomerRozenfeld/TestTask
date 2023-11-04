@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomer Test</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Pixabay API</h1>
-    <input type="text" id="search" placeholder="Enter a Search term">
-    <button onclick="searchPixabay()">Search</button>
-    <div class="container" id="results"></div>
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <h2 id="modalTitle"></h2>
-            <div id="modalDescription"></div>
-            <img id="modalImage">
-        </div>
-    </div>
     <script src="/TestTask/script.js"></script>
+    <style>
+        .card {
+            width: auto; /* Set the width to your desired size */
+            height: auto; /* Set the height to your desired size */
+            margin: 10px; /* Adjust the margin as needed for spacing */
+            border: 1px solid #ccc; /* Add a border for a card-like appearance */
+            padding: 10px;
+        }
+        .card img {
+            max-width: auto; /* Make sure the image fits within the container */
+            max-height: auto; /* Make sure the image fits within the container */
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; background-color: white">
+    <h1 style="text-align: center;">Pixabay API</h1>
+    <div style="text-align: center;">
+        <input type="text" id="search" placeholder="Enter a Search term">
+        <button onclick="searchPixabay()">Search</button>
+    <div id="results" style="margin: auto; display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <h2 id="myhead2" style="display: none;">Want More Pictures?</h2>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <button id="myButton" onclick="showmorepics()" style="display: none;">Show More</button>
+    </div>
+    <div id="Morepics" style="margin: auto; display: flex; flex-wrap: wrap; justify-content: space-evenly;"></div>
+    </div>
 </body>
 </html>
+
+
+

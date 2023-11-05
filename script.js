@@ -106,4 +106,4 @@ function populatePredefinedTags() {
 }
 
 window.addEventListener('load', populatePredefinedTags);
-document.getElementById('tags').addEventListener('change', searchPixabay);
+document.getElementById('tags').addEventListener
